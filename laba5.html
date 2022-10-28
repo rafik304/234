@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript">
+    	alert('1');
+        function detectBrowse ()  {
+  let result = 'Other';
+  if (navigator.userAgent.indexOf('YaBrowser') !== -1 ) {
+    result = 'Yandex Browser';
+  } else if (navigator.userAgent.indexOf('Firefox') !== -1 ) {
+    result = 'Mozilla Firefox';
+  } else if (navigator.userAgent.indexOf('MSIE') !== -1 ) {
+    result = 'Internet Exploder';
+  } else if (navigator.userAgent.indexOf('Edg') !== -1 ) {
+    result = 'Microsoft Edge';
+  }  else if (navigator.userAgent.indexOf('Opera') !== -1 ) {
+    result = 'Opera';
+  } else if (navigator.userAgent.indexOf('Chrome') !== -1 ) {
+    result = ' Chrome';
+  }
+  return result;
+}
+alert(detectBrowse());
+function aleg (a) {
+	switch (a) {
+  case "Chrome":
+    var a = prompt("Введите x");
+    var y = 4*a - 1;
+    alert(y);
+    break;
+  case "Mozilla Firefox":
+    var a = prompt("Введите x");
+    var y=-3*a+9;
+    alert(y);
+    break;
+  case "Opera":
+      var a = prompt("Введите x");
+    var y=(a^2)-9;
+    alert(y);
+    break;
+    case "Microsoft Edge":
+      var a = prompt("Введите x");
+    var  y=10*a^2;
+    alert(y);
+   break;
+
+  default:
+    alert(1);
+    break;
+}
+}
+aleg(detectBrowse());
+    </script>
+
+</head>
+<body>
+   
+</body>
+</html>
